@@ -1,0 +1,16 @@
+grandfatherclock:
+  view: yes
+  name: Grandfather Clock
+  entities:
+    - automation.chime_1
+    - automation.chime_2
+    - automation.chime_3
+    - automation.chime_4
+    - automation.chime_5
+    - automation.chime_6
+    - automation.chime_7
+    - automation.chime_8
+    - automation.chime_9
+    - automation.chime_10
+    - automation.chime_11
+    - automation.chime_12

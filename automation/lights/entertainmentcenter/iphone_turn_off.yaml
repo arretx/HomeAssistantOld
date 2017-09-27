@@ -1,0 +1,23 @@
+- alias: 'Turn Off Entertainment Center Lights'
+  trigger:
+    - platform: state
+      entity_id: device_tracker.jons_iphone_7
+      to: 'not_home'
+    - platform: state
+      entity_id: device_tracker.melanies_iphone_red
+      to: 'not_home'
+  condition:
+    condition: and
+    conditions:
+      - condition: state
+        entity_id: device_tracker.melanies_iphone_red
+        state: 'not_home'
+      - condition: state
+        entity_id: device_tracker.jons_iphone_7
+        state: 'not_home'
+  action:
+    - service: switch.turn_off
+      entity_id: switch.entertainment_center
+    - service: notify.ios_jons_iphone_7
+      data:
+        message: "Lights are off"

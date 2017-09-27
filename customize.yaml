@@ -1,0 +1,19 @@
+remote.apple_tv: {}
+sensor.jons_iphone_7_battery_level:
+  hidden: true
+sensor.melanies_iphone_red_battery_level:
+  hidden: true
+sensor.date:
+  hidden: true
+sensor.jons_iphone_7_battery_state:
+  hidden: true
+sensor.melanies_iphone_red_battery_state:
+  hidden: true
+sensor.phoenix:
+  hidden: true
+sensor.time:
+  hidden: true
+device_tracker.jons_iphone_7:
+  entity_picture: local/images/iconjon.jpg
+device_tracker.melanies_iphone_red:
+  entity_picture: local/images/iconmelanie.jpg

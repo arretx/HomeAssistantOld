@@ -1,0 +1,8 @@
+  - alias: 'Test ECLS On'
+    trigger:
+      platform: state
+      entity_id: switch.entertainment_center
+      to: 'on'
+    condition:
+    action:
+      service: shell_command.ding_ding

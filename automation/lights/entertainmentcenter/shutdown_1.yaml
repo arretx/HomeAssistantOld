@@ -1,0 +1,17 @@
+- alias: 'Shut off Entertainment Center Lights 1'
+  trigger:
+    platform: time
+    minutes: '/1'
+    seconds: 00
+  condition:
+    condition: and
+    conditions:
+      - condition: time
+        after: '22:00:00'
+      - condition: sun
+        before: sunrise
+      - condition: state
+        entity_id: switch.entertainment_center
+        state: 'on'
+  action:
+    service: shell_command.initiating_shutdown_sequence

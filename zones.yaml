@@ -1,0 +1,29 @@
+- name:  CrossFit Infinite Strength
+  latitude: 33.557061
+  longitude: -111.887550
+  radius: 50
+  icon: mdi:weight-kilogram
+
+- name:  New Valley Church
+  latitude: 33.307875
+  longitude: -111.977550
+  radius: 75
+  icon: mdi:church
+
+- name: Basha's Grocery
+  latitude: 33.522665
+  longitude: -111.899078
+  radius: 75
+  icon: mdi:store
+
+- name: Sally's House
+  latitude: 33.504765
+  longitude: -111.914867
+  radius: 30
+  icon: mdi:home
+
+- name: September's House
+  latitude: 33.561837
+  longitude: -112.055447
+  radius: 30
+  icon: mdi:home

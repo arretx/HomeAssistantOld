@@ -1,0 +1,104 @@
+homeassistant:
+  # Name of the location where Home Assistant is running
+  name: !secret homeassistant_name
+  # Location required to calculate the time the sun rises and sets
+  latitude: !secret homeassistant_latitude
+  longitude: !secret homeassistant_longitude
+  # Impacts weather/sunrise data (altitude above sea level in meters)
+  elevation: !secret homeassistant_elevation
+  # metric for Metric, imperial for Imperial
+  unit_system: imperial
+  # Pick yours from here: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+  time_zone: !secret homeassistant_time_zone
+  # Customization file
+  customize: !include customize.yaml
+
+# Show links to resources in log and frontend
+introduction:
+
+# Enables the frontend
+frontend:
+
+# Enables configuration UI
+config:
+
+http:
+  # Uncomment this to add a password (recommended!)
+  api_password: !secret http_password
+  # Uncomment this if you are using SSL/TLS, running in Docker container, etc.
+  base_url: !secret http_base_url
+
+# Checks for available updates
+# Note: This component will send some information about your system to
+# the developers to assist with development of Home Assistant.
+# For more information, please see:
+# https://home-assistant.io/blog/2016/10/25/explaining-the-updater/
+updater:
+  # Optional, allows Home Assistant developers to focus on popular components.
+  # include_used_components: true
+
+ios:
+
+# Discover some devices automatically
+discovery:
+  ignore:
+    - samsung_tv
+
+
+# Allows you to issue voice commands from the frontend in enabled browsers
+conversation:
+
+# Enables support for tracking state changes over time
+history:
+
+# View all events in a logbook
+logbook:
+  exclude:
+    entities:
+      - automation.test_ecls_off
+      - automation.test_ecls_on
+      - sensor.date
+      - sensor.phoenix
+      - sensor.time
+      - remote.apple_tv
+
+# Track the sun
+sun:
+
+# Text to speech
+tts:
+  - platform: google
+
+#Spotify
+#media_player:
+#  - platform: spotify
+#    client_id: !secret spotify_client_id
+#    client_secret: !secret spotify_client_secret
+
+group: !include groups.yaml
+automation: !include_dir_merge_list automation
+script: !include scripts.yaml
+sensor: !include sensors.yaml
+#input_boolean: !include_dir_merge_list input_boolean
+
+ifttt:
+  key: !secret ifttt_key
+
+shell_command:
+  shalalakpop: afplay ~/Music/Shalalakpop.aif
+  ding_ding: afplay ~/Music/Ship_Bell.mp3
+  initiating_shutdown_sequence: afplay ~/Music/initiating_shutdown_sequence.aif
+  chime_1: afplay ~/Music/chime_1.aif
+  chime_2: afplay ~/Music/chime_2.aif
+  chime_3: afplay ~/Music/chime_3.aif
+  chime_4: afplay ~/Music/chime_4.aif
+  chime_5: afplay ~/Music/chime_5.aif
+  chime_6: afplay ~/Music/chime_6.aif
+  chime_7: afplay ~/Music/chime_7.aif
+  chime_8: afplay ~/Music/chime_8.aif
+  chime_9: afplay ~/Music/chime_9.aif
+  chime_10: afplay ~/Music/chime_10.aif
+  chime_11: afplay ~/Music/chime_11.aif
+  chime_12: afplay ~/Music/chime_12.aif
+
+zone: !include zones.yaml

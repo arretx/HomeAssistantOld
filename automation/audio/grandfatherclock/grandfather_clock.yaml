@@ -1,0 +1,139 @@
+- alias: 'Chime 1'
+  trigger:
+    platform: time
+    hours: 13
+    minutes: 0
+    seconds: 0
+  condition:
+  action:
+    service: shell_command.chime_1
+
+- alias: 'Chime 2'
+  trigger:
+    platform: time
+    hours: 14
+    minutes: 0
+    seconds: 0
+  condition:
+  action:
+    service: shell_command.chime_2
+
+- alias: 'Chime 3'
+  trigger:
+    platform: time
+    hours: 15
+    minutes: 0
+    seconds: 0
+  condition:
+  action:
+    service: shell_command.chime_3
+
+- alias: 'Chime 4'
+  trigger:
+    platform: time
+    hours: 16
+    minutes: 0
+    seconds: 0
+  condition:
+  action:
+    service: shell_command.chime_4
+
+- alias: 'Chime 5'
+  trigger:
+    platform: time
+    hours: 17
+    minutes: 0
+    seconds: 0
+  condition:
+  action:
+    service: shell_command.chime_5
+
+- alias: 'Chime 6'
+  trigger:
+    - platform: time
+      hours: 6
+      minutes: 0
+      seconds: 0
+    - platform: time
+      hours: 18
+      minutes: 0
+      seconds: 0
+  condition:
+  action:
+    service: shell_command.chime_6
+
+- alias: 'Chime 7'
+  trigger:
+    - platform: time
+      hours: 7
+      minutes: 0
+      seconds: 0
+    - platform: time
+      hours: 19
+      minutes: 0
+      seconds: 0
+  condition:
+  action:
+    service: shell_command.chime_7
+
+- alias: 'Chime 8'
+  trigger:
+    - platform: time
+      hours: 8
+      minutes: 0
+      seconds: 0
+    - platform: time
+      hours: 20
+      minutes: 0
+      seconds: 0
+  condition:
+  action:
+    service: shell_command.chime_8
+
+- alias: 'Chime 9'
+  trigger:
+    - platform: time
+      hours: 9
+      minutes: 0
+      seconds: 0
+    - platform: time
+      hours: 21
+      minutes: 0
+      seconds: 0
+  condition:
+  action:
+    service: shell_command.chime_9
+
+- alias: 'Chime 10'
+  trigger:
+    - platform: time
+      hours: 10
+      minutes: 0
+      seconds: 0
+    - platform: time
+      hours: 22
+      minutes: 0
+      seconds: 0
+  condition:
+  action:
+    service: shell_command.chime_10
+
+- alias: 'Chime 11'
+  trigger:
+    platform: time
+    hours: 11
+    minutes: 0
+    seconds: 0
+  condition:
+  action:
+    service: shell_command.chime_11
+
+- alias: 'Chime 12'
+  trigger:
+    platform: time
+    hours: 12
+    minutes: 0
+    seconds: 0
+  condition:
+  action:
+    service: shell_command.chime_12
