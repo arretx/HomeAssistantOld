@@ -16,7 +16,7 @@
       - condition: sun
         after: sunset
       - condition: time
-        before: '22:00:00'
+        before: '22:01:00'
       - condition: state
         entity_id: device_tracker.jons_iphone_7
         state: 'home'

@@ -106,14 +106,10 @@
 
 - alias: 'Chime 10'
   trigger:
-    - platform: time
-      hours: 10
-      minutes: 0
-      seconds: 0
-    - platform: time
-      hours: 22
-      minutes: 0
-      seconds: 0
+    platform: time
+    hours: 10
+    minutes: 0
+    seconds: 0
   condition:
   action:
     service: shell_command.chime_10

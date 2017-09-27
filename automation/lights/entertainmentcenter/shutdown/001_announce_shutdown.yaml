@@ -1,4 +1,4 @@
-- alias: 'Shut off Entertainment Center Lights 1'
+- alias: 'Announce System Shutdown Sequence'
   trigger:
     platform: time
     minutes: '/1'
@@ -6,10 +6,12 @@
   condition:
     condition: and
     conditions:
-      - condition: time
-        after: '22:00:00'
-      - condition: sun
-        before: sunrise
+      - condition: or
+        conditions:
+        - condition: time
+          after: '22:00:00'
+        - condition: sun
+          before: sunrise
       - condition: state
         entity_id: switch.entertainment_center
         state: 'on'
