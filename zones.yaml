@@ -27,3 +27,15 @@
   longitude: -112.055447
   radius: 30
   icon: mdi:home
+
+- name: Costco Scottsdale
+  latitude: 33.622948
+  longitude: -111.900721
+  radius: 100
+  icon: mdi:store
+
+- name: Costco Paradise Valley Mall
+  latitude: 33.603524
+  longitude: -111.985865
+  radius: 100
+  icon: mdi:store

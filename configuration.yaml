@@ -69,6 +69,10 @@ sun:
 tts:
   - platform: google
 
+usps:
+  username: !secret usps_username
+  password: !secret usps_password
+
 #Spotify
 #media_player:
 #  - platform: spotify
@@ -79,6 +83,7 @@ group: !include groups.yaml
 automation: !include_dir_merge_list automation
 script: !include scripts.yaml
 sensor: !include sensors.yaml
+camera: !include_dir_merge_list cameras
 #input_boolean: !include_dir_merge_list input_boolean
 
 ifttt:
