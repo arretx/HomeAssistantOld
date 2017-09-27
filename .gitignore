@@ -1,0 +1,13 @@
+www/
+home-assistant.log
+deps/
+.DS_Store
+.HA_VERSION
+*.conf
+.spotify-token-cache
+.uuid
+tts/
+secrets.yaml
+home-assistant_v2.db
+configurator.py
+ace/
