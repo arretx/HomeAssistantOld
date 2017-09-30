@@ -1,3 +1,7 @@
 good_night:
   name: Good Night
   initial: off
+
+good_grief:
+  name: Good Grief
+  initial: off
