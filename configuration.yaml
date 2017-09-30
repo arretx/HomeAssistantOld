@@ -84,7 +84,7 @@ automation: !include_dir_merge_list automation
 script: !include scripts.yaml
 sensor: !include sensors.yaml
 camera: !include_dir_merge_list cameras
-#input_boolean: !include_dir_merge_list input_boolean
+input_boolean: !include_dir_merge_named input_boolean
 
 ifttt:
   key: !secret ifttt_key

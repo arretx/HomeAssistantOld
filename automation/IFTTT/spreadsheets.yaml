@@ -1,0 +1,26 @@
+- alias: Arrived at CrossFit Infinite Strength
+  trigger:
+    - platform: state
+      entity_id: device_tracker.jons_iphone_7
+      to: 'CrossFit Infinite Strength'
+    - platform: state
+      entity_id: input_boolean.good_night
+      to: 'on'
+      from: 'off'
+  condition:
+  action:
+    service: ifttt.trigger
+    data: {"event":"Crossfit_Infinite_Strength", "value1":"IN"}
+- alias: Left CrossFit Infinite Strength
+  trigger:
+    - platform: state
+      entity_id: device_tracker.jons_iphone_7
+      to: 'CrossFit Infinite Strength'
+    - platform: state
+      entity_id: input_boolean.good_night
+      to: 'off'
+      from: 'on'
+  condition:
+  action:
+    service: ifttt.trigger
+    data: {"event":"Crossfit_Infinite_Strength", "value1":"OUT"}
