@@ -41,9 +41,8 @@ ios:
 
 # Discover some devices automatically
 discovery:
-  ignore:
-    - samsung_tv
-
+#  ignore:
+#    - samsung_tv
 
 # Allows you to issue voice commands from the frontend in enabled browsers
 conversation:
@@ -69,6 +68,7 @@ sun:
 tts:
   - platform: google
 
+# US Postal Service setup for Informed Delivery
 usps:
   username: !secret usps_username
   password: !secret usps_password
@@ -79,12 +79,17 @@ usps:
 #    client_id: !secret spotify_client_id
 #    client_secret: !secret spotify_client_secret
 
-group: !include groups.yaml
+##########
+#  All include folders for configuration.yaml
+##########
+
 automation: !include_dir_merge_list automation
-script: !include scripts.yaml
-sensor: !include sensors.yaml
-camera: !include_dir_merge_list cameras
-input_boolean: !include_dir_merge_named input_boolean
+camera: !include_dir_merge_list config/cameras
+group: !include_dir_merge_list groups
+input_boolean: !include_dir_merge_named config/input_boolean
+script: !include_dir_merge_list config/scripts
+sensor: !include_dir_merge_list config/sensors
+zone: !include_dir_merge_named config/zones
 
 ifttt:
   key: !secret ifttt_key
@@ -105,5 +110,3 @@ shell_command:
   chime_10: afplay ~/Music/chime_10.aif
   chime_11: afplay ~/Music/chime_11.aif
   chime_12: afplay ~/Music/chime_12.aif
-
-zone: !include zones.yaml
