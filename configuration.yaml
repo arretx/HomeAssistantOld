@@ -87,7 +87,7 @@ automation: !include_dir_merge_list automation
 camera: !include_dir_merge_list config/cameras
 group: !include_dir_merge_list groups
 input_boolean: !include_dir_merge_named config/input_boolean
-script: !include_dir_merge_list config/scripts
+script: !include_dir_merge_named config/scripts
 sensor: !include_dir_merge_list config/sensors
 zone: !include_dir_merge_named config/zones
 
@@ -110,3 +110,4 @@ shell_command:
   chime_10: afplay ~/Music/chime_10.aif
   chime_11: afplay ~/Music/chime_11.aif
   chime_12: afplay ~/Music/chime_12.aif
+  deposit_confirmation: afplay ~/Music/deposit_confirmation.aif

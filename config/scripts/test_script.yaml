@@ -1,5 +1,0 @@
-  example_script:
-    sequence:
-      # This is written using the Script Syntax
-      service: switch.turn_on
-      entity_id: switch.entertainment_center
