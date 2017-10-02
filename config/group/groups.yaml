@@ -1,3 +1,15 @@
+living_room:
+  view: yes
+  name: Living Room
+  entities:
+    - switch.entertainment_center
+
+exterior:
+  view: yes
+  name: Back Patio
+  entities:
+    - switch.patio_lights
+
 grandfatherclock:
   view: yes
   name: Grandfather Clock
@@ -14,3 +26,9 @@ grandfatherclock:
     - automation.chime_10
     - automation.chime_11
     - automation.chime_12
+
+scripts:
+  view: yes
+  name: scripts
+  entities:
+    - script.cap_one_deposit

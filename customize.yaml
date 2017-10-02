@@ -17,3 +17,5 @@ device_tracker.jons_iphone_7:
   entity_picture: local/images/iconjon.jpg
 device_tracker.melanies_iphone_red:
   entity_picture: local/images/iconmelanie.jpg
+sun.sun:
+  hidden: true

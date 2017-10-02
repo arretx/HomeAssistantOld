@@ -14,7 +14,7 @@ homeassistant:
   customize: !include customize.yaml
 
 # Show links to resources in log and frontend
-introduction:
+# introduction:
 
 # Enables the frontend
 frontend:
@@ -24,7 +24,7 @@ config:
 
 http:
   # Uncomment this to add a password (recommended!)
-  api_password: !secret http_password
+  #api_password: !secret http_password
   # Uncomment this if you are using SSL/TLS, running in Docker container, etc.
   base_url: !secret http_base_url
 
@@ -69,9 +69,9 @@ tts:
   - platform: google
 
 # US Postal Service setup for Informed Delivery
-usps:
-  username: !secret usps_username
-  password: !secret usps_password
+#usps:
+#  username: !secret usps_username
+#  password: !secret usps_password
 
 #Spotify
 #media_player:
@@ -83,13 +83,13 @@ usps:
 #  All include folders for configuration.yaml
 ##########
 
-automation: !include_dir_merge_list automation
-camera: !include_dir_merge_list config/cameras
-group: !include_dir_merge_list groups
-input_boolean: !include_dir_merge_named config/input_boolean
-script: !include_dir_merge_named config/scripts
-sensor: !include_dir_merge_list config/sensors
-zone: !include_dir_merge_named config/zones
+automation: !include_dir_merge_list automation/
+camera: !include_dir_merge_list config/cameras/
+group: !include_dir_merge_named config/group/
+#input_boolean: !include_dir_merge_named config/input_boolean/
+script: !include_dir_merge_named config/scripts/
+sensor: !include_dir_merge_list config/sensors/
+zone: !include_dir_merge_named config/zones/
 
 ifttt:
   key: !secret ifttt_key

@@ -1,5 +1,5 @@
 cap_one_deposit:
-  alias: Announce Deposit Confirmation
+  alias: Capital One Deposit Confirmation
   sequence:
       # This is written using the Script Syntax
     service: shell_command.deposit_confirmation
