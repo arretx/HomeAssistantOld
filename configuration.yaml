@@ -94,20 +94,4 @@ zone: !include_dir_merge_named config/zones/
 ifttt:
   key: !secret ifttt_key
 
-shell_command:
-  shalalakpop: afplay ~/Music/Shalalakpop.aif
-  ding_ding: afplay ~/Music/Ship_Bell.mp3
-  initiating_shutdown_sequence: afplay ~/Music/initiating_shutdown_sequence.aif
-  chime_1: afplay ~/Music/chime_1.aif
-  chime_2: afplay ~/Music/chime_2.aif
-  chime_3: afplay ~/Music/chime_3.aif
-  chime_4: afplay ~/Music/chime_4.aif
-  chime_5: afplay ~/Music/chime_5.aif
-  chime_6: afplay ~/Music/chime_6.aif
-  chime_7: afplay ~/Music/chime_7.aif
-  chime_8: afplay ~/Music/chime_8.aif
-  chime_9: afplay ~/Music/chime_9.aif
-  chime_10: afplay ~/Music/chime_10.aif
-  chime_11: afplay ~/Music/chime_11.aif
-  chime_12: afplay ~/Music/chime_12.aif
-  deposit_confirmation: afplay ~/Music/deposit_confirmation.aif
+shell_command: !include_dir_merge_named config/shell_command/

@@ -1,0 +1,5 @@
+wells_fargo_mortgage_paid:
+  alias: Wells Fargo Mortgage Payment Confirmation
+  sequence:
+      # This is written using the Script Syntax
+    service: shell_command.mortgage_paid

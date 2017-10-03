@@ -42,3 +42,4 @@ scripts:
   name: Scripts
   entities:
     - script.cap_one_deposit
+    - script.banana
