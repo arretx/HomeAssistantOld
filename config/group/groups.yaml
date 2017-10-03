@@ -1,3 +1,13 @@
+entertainment_center:
+  view: yes
+  name: Entertainment Center
+  entities:
+    - switch.entertainment_center
+    - media_player.apple_tv
+    - remote.apple_tv
+    - media_player.samsung_led60_un60f7100
+    - input_boolean.television
+
 living_room:
   view: yes
   name: Living Room
@@ -29,6 +39,6 @@ grandfatherclock:
 
 scripts:
   view: yes
-  name: scripts
+  name: Scripts
   entities:
     - script.cap_one_deposit

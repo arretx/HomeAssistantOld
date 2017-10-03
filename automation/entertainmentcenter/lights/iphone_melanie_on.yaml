@@ -1,11 +1,11 @@
 #
-# When my ios_jons_iphone_7 is set to
+# When my melanies_iphone_red is set to
 # "home" if sunset is less than 1 hour from
 # that time -AND- it's not yet later than
 # 10PM, the Entertainment center lights
 # will turn on.
 #
-- alias: 'Turn On Entertainment Center Jon'
+- alias: 'Turn On Entertainment Center Melanie'
   trigger:
     platform: time
     minutes: '/1'
@@ -18,8 +18,11 @@
       - condition: time
         before: '22:00:00'
       - condition: state
-        entity_id: device_tracker.jons_iphone_7
+        entity_id: device_tracker.melanies_iphone_red
         state: 'home'
+      - condition: state
+        entity_id: switch.entertainment_center
+        state: 'off'
   action:
     - service: switch.turn_on
       entity_id: switch.entertainment_center

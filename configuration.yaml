@@ -41,8 +41,8 @@ ios:
 
 # Discover some devices automatically
 discovery:
-#  ignore:
-#    - samsung_tv
+  ignore:
+   - samsung_tv
 
 # Allows you to issue voice commands from the frontend in enabled browsers
 conversation:
@@ -86,7 +86,7 @@ tts:
 automation: !include_dir_merge_list automation/
 camera: !include_dir_merge_list config/cameras/
 group: !include_dir_merge_named config/group/
-#input_boolean: !include_dir_merge_named config/input_boolean/
+input_boolean: !include_dir_merge_named config/input_boolean/
 script: !include_dir_merge_named config/scripts/
 sensor: !include_dir_merge_list config/sensors/
 zone: !include_dir_merge_named config/zones/

@@ -1,4 +1,4 @@
-- alias: Arrived at CrossFit Infinite Strength
+- alias: Jon Arrived at CrossFit Infinite Strength
   trigger:
     - platform: state
       entity_id: device_tracker.jons_iphone_7
@@ -9,12 +9,51 @@
       from: 'off'
   condition:
   action:
-    service: ifttt.trigger
-    data: {"event":"Crossfit_Infinite_Strength", "value1":"IN"}
-- alias: Left CrossFit Infinite Strength
+    - service: notify.ios_jons_iphone_7
+      data:
+        message: "Updated Spreadsheet"
+    - service: ifttt.trigger
+      data: {"event":"Crossfit_Infinite_Strength", "value1":"IN", "value2":"Jon"}
+
+
+
+- alias: Jon Left CrossFit Infinite Strength
   trigger:
     - platform: state
       entity_id: device_tracker.jons_iphone_7
+      from: 'CrossFit Infinite Strength'
+      to: 'not_home'
+    - platform: state
+      entity_id: input_boolean.good_night
+      to: 'off'
+      from: 'on'
+  condition:
+  action:
+    service: ifttt.trigger
+    data: {"event":"Crossfit_Infinite_Strength", "value1":"OUT", "value2":"Jon"}
+
+
+
+- alias: Melanie Arrived at CrossFit Infinite Strength
+  trigger:
+    - platform: state
+      entity_id: device_tracker.melanies_iphone_red
+      to: 'CrossFit Infinite Strength'
+    - platform: state
+      entity_id: input_boolean.good_night
+      to: 'on'
+      from: 'off'
+  condition:
+  action:
+    service: ifttt.trigger
+    data: {"event":"Crossfit_Infinite_Strength", "value1":"IN", "value2":"Melanie"}
+
+
+
+- alias: Melanie Left CrossFit Infinite Strength
+  trigger:
+    - platform: state
+      entity_id: device_tracker.melanies_iphone_red
       to: 'CrossFit Infinite Strength'
     - platform: state
       entity_id: input_boolean.good_night
@@ -23,4 +62,4 @@
   condition:
   action:
     service: ifttt.trigger
-    data: {"event":"Crossfit_Infinite_Strength", "value1":"OUT"}
+    data: {"event":"Crossfit_Infinite_Strength", "value1":"OUT", "value2":"Melanie"}
