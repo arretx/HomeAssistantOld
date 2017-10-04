@@ -43,3 +43,5 @@ scripts:
   entities:
     - script.cap_one_deposit
     - script.banana
+    - script.blog_post_scott_res
+    - script.blog_post_realtor

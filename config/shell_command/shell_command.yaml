@@ -15,3 +15,5 @@ chime_11: afplay ~/Music/chime_11.aif
 chime_12: afplay ~/Music/chime_12.aif
 deposit_confirmation: afplay ~/Music/deposit_confirmation.aif
 mortgage_paid: afplay ~/Music/mortgage_paid.aif
+blog_post_scott_res: afplay ~/Music/typewriter_one.aif
+blog_post_realtor: afplay ~/Music/inyournewstoday.aif

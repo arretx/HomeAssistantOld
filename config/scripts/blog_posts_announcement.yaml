@@ -1,0 +1,10 @@
+blog_post_scott_res:
+  alias: Scott Residential Group RSS Feed Notification
+  sequence:
+      # This is written using the Script Syntax
+    service: shell_command.blog_post_scott_res
+
+blog_post_realtor:
+  alias: Realtor.jongriffith.com RSS Feed Notification
+  sequence:
+    service: shell_command.blog_post_realtor
