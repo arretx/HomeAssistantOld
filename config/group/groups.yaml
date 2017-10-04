@@ -45,3 +45,4 @@ scripts:
     - script.banana
     - script.blog_post_scott_res
     - script.blog_post_realtor
+    - script.initiating_shutdown_sequence

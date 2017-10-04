@@ -16,4 +16,4 @@
         entity_id: switch.entertainment_center
         state: 'on'
   action:
-    service: shell_command.initiating_shutdown_sequence
+    service: script.initiating_shutdown_sequence

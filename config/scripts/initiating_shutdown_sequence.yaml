@@ -1,0 +1,5 @@
+initiating_shutdown_sequence:
+  alias: Announce Shutdown Sequence
+  sequence:
+      # This is written using the Script Syntax
+    service: shell_command.initiating_shutdown_sequence
