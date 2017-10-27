@@ -74,10 +74,10 @@ tts:
 #  password: !secret usps_password
 
 #Spotify
-#media_player:
-#  - platform: spotify
-#    client_id: !secret spotify_client_id
-#    client_secret: !secret spotify_client_secret
+media_player:
+  - platform: spotify
+    client_id: !secret spotify_client_id
+    client_secret: !secret spotify_client_secret
 
 ##########
 #  All include folders for configuration.yaml

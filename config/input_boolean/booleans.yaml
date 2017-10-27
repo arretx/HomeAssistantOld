@@ -3,3 +3,6 @@ television:
 
 good_night:
   name: Good Night
+
+spotify_switch:
+  name: Spotify Switch

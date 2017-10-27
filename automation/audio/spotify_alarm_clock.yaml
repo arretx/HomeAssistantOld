@@ -1,0 +1,14 @@
+- alias: 'Spotify Alarm Clock'
+  trigger:
+    platform: state
+    entity_id: input_boolean.spotify_switch
+    from: 'off'
+    to: 'on'
+  action:
+    - service: media_player.turn_on
+      entity_id: media_player.spotify
+    - service: media_player.play_media
+      entity_id: media_player.spotify
+      data:
+        media_content_type: music
+        media_content_id: spotify:user:arretx:playlist:2ywlP4v8IcnqZyuJ2GwWcn
